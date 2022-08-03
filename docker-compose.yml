@@ -1,0 +1,65 @@
+version: "3.9"
+services: 
+  zookeeper:
+    container_name: zookeeper
+    image: kafka:1
+    volumes:
+      - ./zookeeper.properties:/kafka_2.13-3.1.0/config/zookeeper.properties
+      - volume-zookeeper:/zookeeper
+    networks:
+      Kafka:
+        ipv4_address: 172.25.0.2
+    environment:
+      SERVICE: zookeeper
+      CONFIG: zookeeper
+
+  nodo1:
+    container_name: nodo1
+    image: kafka:1
+    volumes:
+      - ./server.properties:/kafka_2.13-3.1.0/config/server.properties
+      - volume-nodo1:/kafka-logs
+    ports:
+      - 9092:9092
+    networks:
+      Kafka:
+        ipv4_address: 172.25.0.3
+    environment:
+      SERVICE: kafka
+      CONFIG: server
+      PORT: 9092
+    depends_on:
+      - zookeeper
+    
+
+  nodo2:
+    container_name: nodo2
+    image: kafka:1
+    volumes:
+      - ./server1.properties:/kafka_2.13-3.1.0/config/server.properties
+      - volume-nodo2:/kafka-logs
+    ports:
+      - 9093:9092
+    networks:
+      Kafka:
+        ipv4_address: 172.25.0.4
+    environment:
+      SERVICE: kafka
+      CONFIG: server
+      PORT: 9092
+    depends_on:
+      - zookeeper
+
+networks:
+  Kafka:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.25.0.0/16
+          gateway: 172.25.0.1
+
+      
+volumes:
+  volume-zookeeper:
+  volume-nodo1:
+  volume-nodo2:
