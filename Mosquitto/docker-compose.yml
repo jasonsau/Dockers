@@ -1,0 +1,26 @@
+version: '3.9'
+services:
+  mosquitto:
+    container_name: mosquitto
+    image: eclipse-mosquitto:latest
+    volumes:
+      - ./mosquitto.conf:/mosquitto/config/mosquitto.conf
+      - mosquitto-logs:/mosquitto/log/
+      - mosquitto-data:/mosquitto/data/
+    ports: 
+      - 1883:1883
+    networks:
+      Mosquitto:
+        ipv4_address: 172.30.0.2
+
+networks:
+  Mosquitto:
+    driver: bridge
+    ipam:
+      config:
+      - subnet: 172.30.0.0/16
+        gateway: 172.30.0.1
+
+volumes:
+  mosquitto-data:
+  mosquitto-logs:
