@@ -1,0 +1,13 @@
+server {
+    listen 80;
+    server_name default.com.js;
+    root /var/www/html/default.com.js;
+
+    index index.php index.html index.htm;
+
+    location ~ \.php$ {
+        fastcgi_pass phpserver:9000;
+        include fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+    }
+}

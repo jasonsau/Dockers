@@ -1,0 +1,20 @@
+Starting the WebSocket server on port 6001...
+
+   RuntimeException 
+
+  Failed to listen on "tcp://0.0.0.0:6001": Address in use
+
+  at ValidarDocumentos/vendor/react/socket/src/TcpServer.php:184
+    180▕                 // @link https://3v4l.org/3qOBl
+    181▕                 $errno = SocketServer::errno($errstr);
+    182▕             }
+    183▕ 
+  ➜ 184▕             throw new \RuntimeException(
+    185▕                 'Failed to listen on "' . $uri . '": ' . $errstr . SocketServer::errconst($errno),
+    186▕                 $errno
+    187▕             );
+    188▕         }
+
+      [2m+17 vendor frames [22m
+  18  ValidarDocumentos/artisan:35
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))

@@ -1,0 +1,50 @@
+FROM php:8.2.9-fpm
+
+RUN apt-get update && apt-get install -y \
+    libfreetype-dev \
+    libjpeg62-turbo-dev \
+    libpng-dev \
+    icu-devtools \
+    libicu-dev \
+    libzip-dev \
+    zip \
+    unzip \
+    git \
+    curl \
+    vim \
+    wget \
+    libcurl4-openssl-dev \
+    libmagickwand-dev \
+    libmagickcore-dev
+RUN docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install -j$(nproc) gd \
+    && docker-php-ext-install mysqli pdo pdo_mysql intl curl 
+RUN docker-php-ext-install zip
+RUN curl -fsSL 'https://pecl.php.net/get/imagick-3.7.0.tgz' -o imagick.tar.gz \
+    && mkdir -p imagick \
+    && tar -xf imagick.tar.gz -C imagick --strip-components=1 \
+    && rm imagick.tar.gz \
+    && ( \
+        cd imagick \
+        && phpize \
+        && ./configure \
+        && make -j$(nproc) \
+        && make install \
+    ) \
+    && rm -r imagick \
+    && docker-php-ext-enable imagick
+
+
+
+RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+
+RUN php -r "if (hash_file('sha384', 'composer-setup.php') === 'e21205b207c3ff031906575712edab6f13eb0b361f2085f1f1237b7126d785e826a450292b6cfd1d64d92e6563bbde02') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+
+RUN php composer-setup.php
+RUN php -r "unlink('composer-setup.php');"
+RUN mv composer.phar /usr/local/bin/composer
+RUN apt-get install libreoffice -y
+RUN apt-get update -qq \
+    && apt-get install -y -q libreoffice \
+    && apt-get remove -q -y libreoffice-gnome
+CMD ["php-fpm"]

@@ -1,0 +1,57 @@
+version: "3.9"
+services:
+  web_server:
+    image: nginx:latest
+    container_name: web_server
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./sites-enabled:/etc/nginx/sites-enabled
+      - ./certs:/etc/nginx/certs
+      - ./logs:/var/log/nginx
+      - ./html:/var/www/html
+    networks:
+      nginx_network:
+        ipv4_address: 192.168.2.2
+  
+  phpserver:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: phpimagetest
+    container_name: phpserver
+    volumes:
+      - ./php/local.ini:/usr/local/etc/php/conf.d/local.ini
+      - ./html:/var/www/html
+    networks:
+      nginx_network:
+        ipv4_address: 192.168.2.3
+
+  mysql_server:
+    container_name: mysql_server
+    image: mysql:latest
+    restart: always
+    volumes:
+    - mysql:/var/lib/mysql
+    - ./mysql/my.cnf:/etc/mysql/my.cnf
+    - ./mysql/conf.d:/etc/mysql/conf.d
+    environment:
+    - MYSQL_ROOT_PASSWORD=root
+    ports:
+      - "3306:3306"
+    networks:
+      nginx_network:
+        ipv4_address: 192.168.2.4
+
+
+networks:
+  nginx_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.2.0/24
+          gateway: 192.168.2.1
+
+volumes:
+  mysql:

@@ -1,0 +1,162 @@
+2023/08/26 05:23:51 [emerg] 1#1: unknown directive "http:" in /etc/nginx/nginx.conf:9
+2023/08/26 05:24:08 [emerg] 1#1: unknown directive "http:" in /etc/nginx/nginx.conf:9
+2023/08/26 05:24:45 [error] 22#22: *1 "/var/www/default.com.js/index.html" is not found (2: No such file or directory), client: 172.18.0.1, server: default.com.js, request: "GET / HTTP/1.1", host: "localhost"
+2023/08/26 05:24:45 [error] 22#22: *1 open() "/var/www/default.com.js/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: default.com.js, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2023/08/26 05:25:30 [error] 22#22: *1 "/var/www/default.com.js/index.html" is not found (2: No such file or directory), client: 172.18.0.1, server: default.com.js, request: "GET / HTTP/1.1", host: "localhost"
+2023/08/26 05:25:32 [error] 22#22: *1 "/var/www/default.com.js/index.html" is not found (2: No such file or directory), client: 172.18.0.1, server: default.com.js, request: "GET / HTTP/1.1", host: "localhost"
+2023/08/26 05:25:32 [error] 22#22: *1 "/var/www/default.com.js/index.html" is not found (2: No such file or directory), client: 172.18.0.1, server: default.com.js, request: "GET / HTTP/1.1", host: "localhost"
+2023/08/26 05:26:29 [error] 23#23: *2 "/var/www/default.com.js/index.html" is not found (2: No such file or directory), client: 192.168.1.2, server: default.com.js, request: "GET / HTTP/1.1", host: "default.com.js"
+2023/08/26 05:26:29 [error] 23#23: *2 open() "/var/www/default.com.js/favicon.ico" failed (2: No such file or directory), client: 192.168.1.2, server: default.com.js, request: "GET /favicon.ico HTTP/1.1", host: "default.com.js", referrer: "http://default.com.js/"
+2023/08/26 05:26:48 [error] 24#24: *3 "/var/www/default.com.js/index.html" is not found (2: No such file or directory), client: 192.168.1.2, server: default.com.js, request: "GET / HTTP/1.1", host: "default.com.js"
+2023/08/26 05:26:53 [error] 23#23: *2 "/var/www/default.com.js/index.html" is not found (2: No such file or directory), client: 192.168.1.2, server: default.com.js, request: "GET / HTTP/1.1", host: "default.com.js"
+2023/08/26 05:26:53 [error] 23#23: *2 open() "/var/www/default.com.js/favicon.ico" failed (2: No such file or directory), client: 192.168.1.2, server: default.com.js, request: "GET /favicon.ico HTTP/1.1", host: "default.com.js", referrer: "http://default.com.js/"
+2023/08/26 05:27:58 [error] 23#23: *2 open() "/var/www/default.com.js/index.html" failed (2: No such file or directory), client: 192.168.1.2, server: default.com.js, request: "GET /index.html HTTP/1.1", host: "default.com.js"
+2023/09/03 00:00:12 [error] 31#31: *1 open() "/var/www/html/default.com.js/favicon.ico" failed (2: No such file or directory), client: 172.19.0.1, server: default.com.js, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2023/09/03 00:05:52 [error] 22#22: *1 open() "/var/www/html/default.com.js/favicon.ico" failed (2: No such file or directory), client: 172.19.0.1, server: default.com.js, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/index.php"
+2023/09/03 00:05:53 [error] 22#22: *1 open() "/var/www/html/default.com.js/favicon.ico" failed (2: No such file or directory), client: 172.19.0.1, server: default.com.js, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/index.php"
+2023/09/03 00:14:45 [error] 24#24: *9 open() "/var/www/html/default.com.js/favicon.ico" failed (2: No such file or directory), client: 172.19.0.1, server: default.com.js, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/index.php"
+2023/09/03 00:14:46 [error] 24#24: *9 open() "/var/www/html/default.com.js/favicon.ico" failed (2: No such file or directory), client: 172.19.0.1, server: default.com.js, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/index.php"
+2023/09/03 00:15:28 [error] 25#25: *15 open() "/var/www/html/default.com.js/favicon.ico" failed (2: No such file or directory), client: 172.19.0.1, server: default.com.js, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/info.php"
+2023/09/03 00:15:40 [error] 25#25: *15 open() "/var/www/html/default.com.js/favicon.ico" failed (2: No such file or directory), client: 172.19.0.1, server: default.com.js, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/info.php"
+2023/09/03 00:15:43 [error] 26#26: *18 open() "/var/www/html/default.com.js/favicon.ico" failed (2: No such file or directory), client: 172.19.0.1, server: default.com.js, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/info.php"
+2023/09/03 00:15:43 [error] 23#23: *20 open() "/var/www/html/default.com.js/favicon.ico" failed (2: No such file or directory), client: 172.19.0.1, server: default.com.js, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/info.php"
+2023/09/03 00:15:44 [error] 22#22: *22 open() "/var/www/html/default.com.js/favicon.ico" failed (2: No such file or directory), client: 172.19.0.1, server: default.com.js, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/info.php"
+2023/09/03 00:15:55 [error] 22#22: *24 open() "/var/www/html/default.com.js/favicon.ico" failed (2: No such file or directory), client: 172.19.0.1, server: default.com.js, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/info.php"
+2023/09/03 00:15:56 [error] 22#22: *26 open() "/var/www/html/default.com.js/favicon.ico" failed (2: No such file or directory), client: 172.19.0.1, server: default.com.js, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/info.php"
+2023/09/03 00:15:56 [error] 22#22: *28 open() "/var/www/html/default.com.js/favicon.ico" failed (2: No such file or directory), client: 172.19.0.1, server: default.com.js, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/info.php"
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "html", content type: "text/html", previous content type: "text/html" in /etc/nginx/mime.types:3
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "htm", content type: "text/html", previous content type: "text/html" in /etc/nginx/mime.types:3
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "shtml", content type: "text/html", previous content type: "text/html" in /etc/nginx/mime.types:3
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "css", content type: "text/css", previous content type: "text/css" in /etc/nginx/mime.types:4
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "xml", content type: "text/xml", previous content type: "text/xml" in /etc/nginx/mime.types:5
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "gif", content type: "image/gif", previous content type: "image/gif" in /etc/nginx/mime.types:6
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "jpeg", content type: "image/jpeg", previous content type: "image/jpeg" in /etc/nginx/mime.types:7
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "jpg", content type: "image/jpeg", previous content type: "image/jpeg" in /etc/nginx/mime.types:7
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "js", content type: "application/javascript", previous content type: "application/javascript" in /etc/nginx/mime.types:8
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "atom", content type: "application/atom+xml", previous content type: "application/atom+xml" in /etc/nginx/mime.types:9
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "rss", content type: "application/rss+xml", previous content type: "application/rss+xml" in /etc/nginx/mime.types:10
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "mml", content type: "text/mathml", previous content type: "text/mathml" in /etc/nginx/mime.types:12
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "txt", content type: "text/plain", previous content type: "text/plain" in /etc/nginx/mime.types:13
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "jad", content type: "text/vnd.sun.j2me.app-descriptor", previous content type: "text/vnd.sun.j2me.app-descriptor" in /etc/nginx/mime.types:14
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "wml", content type: "text/vnd.wap.wml", previous content type: "text/vnd.wap.wml" in /etc/nginx/mime.types:15
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "htc", content type: "text/x-component", previous content type: "text/x-component" in /etc/nginx/mime.types:16
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "avif", content type: "image/avif", previous content type: "image/avif" in /etc/nginx/mime.types:18
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "png", content type: "image/png", previous content type: "image/png" in /etc/nginx/mime.types:19
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "svg", content type: "image/svg+xml", previous content type: "image/svg+xml" in /etc/nginx/mime.types:20
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "svgz", content type: "image/svg+xml", previous content type: "image/svg+xml" in /etc/nginx/mime.types:20
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "tif", content type: "image/tiff", previous content type: "image/tiff" in /etc/nginx/mime.types:21
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "tiff", content type: "image/tiff", previous content type: "image/tiff" in /etc/nginx/mime.types:21
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "wbmp", content type: "image/vnd.wap.wbmp", previous content type: "image/vnd.wap.wbmp" in /etc/nginx/mime.types:22
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "webp", content type: "image/webp", previous content type: "image/webp" in /etc/nginx/mime.types:23
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "ico", content type: "image/x-icon", previous content type: "image/x-icon" in /etc/nginx/mime.types:24
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "jng", content type: "image/x-jng", previous content type: "image/x-jng" in /etc/nginx/mime.types:25
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "bmp", content type: "image/x-ms-bmp", previous content type: "image/x-ms-bmp" in /etc/nginx/mime.types:26
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "woff", content type: "font/woff", previous content type: "font/woff" in /etc/nginx/mime.types:28
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "woff2", content type: "font/woff2", previous content type: "font/woff2" in /etc/nginx/mime.types:29
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "jar", content type: "application/java-archive", previous content type: "application/java-archive" in /etc/nginx/mime.types:31
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "war", content type: "application/java-archive", previous content type: "application/java-archive" in /etc/nginx/mime.types:31
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "ear", content type: "application/java-archive", previous content type: "application/java-archive" in /etc/nginx/mime.types:31
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "json", content type: "application/json", previous content type: "application/json" in /etc/nginx/mime.types:32
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "hqx", content type: "application/mac-binhex40", previous content type: "application/mac-binhex40" in /etc/nginx/mime.types:33
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "doc", content type: "application/msword", previous content type: "application/msword" in /etc/nginx/mime.types:34
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "pdf", content type: "application/pdf", previous content type: "application/pdf" in /etc/nginx/mime.types:35
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "ps", content type: "application/postscript", previous content type: "application/postscript" in /etc/nginx/mime.types:36
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "eps", content type: "application/postscript", previous content type: "application/postscript" in /etc/nginx/mime.types:36
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "ai", content type: "application/postscript", previous content type: "application/postscript" in /etc/nginx/mime.types:36
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "rtf", content type: "application/rtf", previous content type: "application/rtf" in /etc/nginx/mime.types:37
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "m3u8", content type: "application/vnd.apple.mpegurl", previous content type: "application/vnd.apple.mpegurl" in /etc/nginx/mime.types:38
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "kml", content type: "application/vnd.google-earth.kml+xml", previous content type: "application/vnd.google-earth.kml+xml" in /etc/nginx/mime.types:39
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "kmz", content type: "application/vnd.google-earth.kmz", previous content type: "application/vnd.google-earth.kmz" in /etc/nginx/mime.types:40
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "xls", content type: "application/vnd.ms-excel", previous content type: "application/vnd.ms-excel" in /etc/nginx/mime.types:41
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "eot", content type: "application/vnd.ms-fontobject", previous content type: "application/vnd.ms-fontobject" in /etc/nginx/mime.types:42
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "ppt", content type: "application/vnd.ms-powerpoint", previous content type: "application/vnd.ms-powerpoint" in /etc/nginx/mime.types:43
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "odg", content type: "application/vnd.oasis.opendocument.graphics", previous content type: "application/vnd.oasis.opendocument.graphics" in /etc/nginx/mime.types:44
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "odp", content type: "application/vnd.oasis.opendocument.presentation", previous content type: "application/vnd.oasis.opendocument.presentation" in /etc/nginx/mime.types:45
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "ods", content type: "application/vnd.oasis.opendocument.spreadsheet", previous content type: "application/vnd.oasis.opendocument.spreadsheet" in /etc/nginx/mime.types:46
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "odt", content type: "application/vnd.oasis.opendocument.text", previous content type: "application/vnd.oasis.opendocument.text" in /etc/nginx/mime.types:47
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "pptx", content type: "application/vnd.openxmlformats-officedocument.presentationml.presentation", previous content type: "application/vnd.openxmlformats-officedocument.presentationml.presentation" in /etc/nginx/mime.types:49
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "xlsx", content type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", previous content type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" in /etc/nginx/mime.types:51
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "docx", content type: "application/vnd.openxmlformats-officedocument.wordprocessingml.document", previous content type: "application/vnd.openxmlformats-officedocument.wordprocessingml.document" in /etc/nginx/mime.types:53
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "wmlc", content type: "application/vnd.wap.wmlc", previous content type: "application/vnd.wap.wmlc" in /etc/nginx/mime.types:54
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "wasm", content type: "application/wasm", previous content type: "application/wasm" in /etc/nginx/mime.types:55
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "7z", content type: "application/x-7z-compressed", previous content type: "application/x-7z-compressed" in /etc/nginx/mime.types:56
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "cco", content type: "application/x-cocoa", previous content type: "application/x-cocoa" in /etc/nginx/mime.types:57
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "jardiff", content type: "application/x-java-archive-diff", previous content type: "application/x-java-archive-diff" in /etc/nginx/mime.types:58
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "jnlp", content type: "application/x-java-jnlp-file", previous content type: "application/x-java-jnlp-file" in /etc/nginx/mime.types:59
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "run", content type: "application/x-makeself", previous content type: "application/x-makeself" in /etc/nginx/mime.types:60
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "pl", content type: "application/x-perl", previous content type: "application/x-perl" in /etc/nginx/mime.types:61
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "pm", content type: "application/x-perl", previous content type: "application/x-perl" in /etc/nginx/mime.types:61
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "prc", content type: "application/x-pilot", previous content type: "application/x-pilot" in /etc/nginx/mime.types:62
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "pdb", content type: "application/x-pilot", previous content type: "application/x-pilot" in /etc/nginx/mime.types:62
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "rar", content type: "application/x-rar-compressed", previous content type: "application/x-rar-compressed" in /etc/nginx/mime.types:63
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "rpm", content type: "application/x-redhat-package-manager", previous content type: "application/x-redhat-package-manager" in /etc/nginx/mime.types:64
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "sea", content type: "application/x-sea", previous content type: "application/x-sea" in /etc/nginx/mime.types:65
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "swf", content type: "application/x-shockwave-flash", previous content type: "application/x-shockwave-flash" in /etc/nginx/mime.types:66
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "sit", content type: "application/x-stuffit", previous content type: "application/x-stuffit" in /etc/nginx/mime.types:67
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "tcl", content type: "application/x-tcl", previous content type: "application/x-tcl" in /etc/nginx/mime.types:68
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "tk", content type: "application/x-tcl", previous content type: "application/x-tcl" in /etc/nginx/mime.types:68
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "der", content type: "application/x-x509-ca-cert", previous content type: "application/x-x509-ca-cert" in /etc/nginx/mime.types:69
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "pem", content type: "application/x-x509-ca-cert", previous content type: "application/x-x509-ca-cert" in /etc/nginx/mime.types:69
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "crt", content type: "application/x-x509-ca-cert", previous content type: "application/x-x509-ca-cert" in /etc/nginx/mime.types:69
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "xpi", content type: "application/x-xpinstall", previous content type: "application/x-xpinstall" in /etc/nginx/mime.types:70
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "xhtml", content type: "application/xhtml+xml", previous content type: "application/xhtml+xml" in /etc/nginx/mime.types:71
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "xspf", content type: "application/xspf+xml", previous content type: "application/xspf+xml" in /etc/nginx/mime.types:72
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "zip", content type: "application/zip", previous content type: "application/zip" in /etc/nginx/mime.types:73
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "bin", content type: "application/octet-stream", previous content type: "application/octet-stream" in /etc/nginx/mime.types:75
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "exe", content type: "application/octet-stream", previous content type: "application/octet-stream" in /etc/nginx/mime.types:75
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "dll", content type: "application/octet-stream", previous content type: "application/octet-stream" in /etc/nginx/mime.types:75
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "deb", content type: "application/octet-stream", previous content type: "application/octet-stream" in /etc/nginx/mime.types:76
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "dmg", content type: "application/octet-stream", previous content type: "application/octet-stream" in /etc/nginx/mime.types:77
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "iso", content type: "application/octet-stream", previous content type: "application/octet-stream" in /etc/nginx/mime.types:78
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "img", content type: "application/octet-stream", previous content type: "application/octet-stream" in /etc/nginx/mime.types:78
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "msi", content type: "application/octet-stream", previous content type: "application/octet-stream" in /etc/nginx/mime.types:79
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "msp", content type: "application/octet-stream", previous content type: "application/octet-stream" in /etc/nginx/mime.types:79
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "msm", content type: "application/octet-stream", previous content type: "application/octet-stream" in /etc/nginx/mime.types:79
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "mid", content type: "audio/midi", previous content type: "audio/midi" in /etc/nginx/mime.types:81
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "midi", content type: "audio/midi", previous content type: "audio/midi" in /etc/nginx/mime.types:81
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "kar", content type: "audio/midi", previous content type: "audio/midi" in /etc/nginx/mime.types:81
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "mp3", content type: "audio/mpeg", previous content type: "audio/mpeg" in /etc/nginx/mime.types:82
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "ogg", content type: "audio/ogg", previous content type: "audio/ogg" in /etc/nginx/mime.types:83
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "m4a", content type: "audio/x-m4a", previous content type: "audio/x-m4a" in /etc/nginx/mime.types:84
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "ra", content type: "audio/x-realaudio", previous content type: "audio/x-realaudio" in /etc/nginx/mime.types:85
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "3gpp", content type: "video/3gpp", previous content type: "video/3gpp" in /etc/nginx/mime.types:87
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "3gp", content type: "video/3gpp", previous content type: "video/3gpp" in /etc/nginx/mime.types:87
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "ts", content type: "video/mp2t", previous content type: "video/mp2t" in /etc/nginx/mime.types:88
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "mp4", content type: "video/mp4", previous content type: "video/mp4" in /etc/nginx/mime.types:89
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "mpeg", content type: "video/mpeg", previous content type: "video/mpeg" in /etc/nginx/mime.types:90
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "mpg", content type: "video/mpeg", previous content type: "video/mpeg" in /etc/nginx/mime.types:90
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "mov", content type: "video/quicktime", previous content type: "video/quicktime" in /etc/nginx/mime.types:91
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "webm", content type: "video/webm", previous content type: "video/webm" in /etc/nginx/mime.types:92
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "flv", content type: "video/x-flv", previous content type: "video/x-flv" in /etc/nginx/mime.types:93
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "m4v", content type: "video/x-m4v", previous content type: "video/x-m4v" in /etc/nginx/mime.types:94
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "mng", content type: "video/x-mng", previous content type: "video/x-mng" in /etc/nginx/mime.types:95
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "asx", content type: "video/x-ms-asf", previous content type: "video/x-ms-asf" in /etc/nginx/mime.types:96
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "asf", content type: "video/x-ms-asf", previous content type: "video/x-ms-asf" in /etc/nginx/mime.types:96
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "wmv", content type: "video/x-ms-wmv", previous content type: "video/x-ms-wmv" in /etc/nginx/mime.types:97
+2023/09/03 00:23:05 [warn] 710#710: duplicate extension "avi", content type: "video/x-msvideo", previous content type: "video/x-msvideo" in /etc/nginx/mime.types:98
+2023/09/03 00:26:44 [notice] 825#825: signal process started
+2023/09/03 00:26:53 [emerg] 833#833: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2023/09/03 00:26:53 [emerg] 833#833: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2023/09/03 00:26:53 [emerg] 833#833: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2023/09/03 00:26:53 [emerg] 833#833: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2023/09/03 00:26:53 [emerg] 833#833: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2023/09/03 00:27:06 [notice] 835#835: signal process started
+2023/09/03 00:27:11 [error] 836#836: *30 open() "/var/www/html/default.com.js/favicon.ico" failed (2: No such file or directory), client: 172.19.0.1, server: default.com.js, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/info.php"
+2023/09/03 00:27:13 [error] 837#837: *32 open() "/var/www/html/default.com.js/favicon.ico" failed (2: No such file or directory), client: 172.19.0.1, server: default.com.js, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/info.php"
+2023/09/03 00:27:14 [error] 838#838: *34 open() "/var/www/html/default.com.js/favicon.ico" failed (2: No such file or directory), client: 172.19.0.1, server: default.com.js, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/info.php"
+2023/09/03 00:27:21 [error] 838#838: *34 open() "/var/www/html/default.com.js/favicon.ico" failed (2: No such file or directory), client: 172.19.0.1, server: default.com.js, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2023/09/03 00:27:24 [error] 838#838: *34 open() "/var/www/html/default.com.js/favicon.ico" failed (2: No such file or directory), client: 172.19.0.1, server: default.com.js, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/info.php"
+2023/09/03 00:39:03 [notice] 897#897: signal process started
+2023/09/03 00:40:51 [error] 29#29: *1 open() "/var/www/html/default.com.js/info.html" failed (2: No such file or directory), client: 172.20.0.1, server: default.com.js, request: "GET /info.html HTTP/1.1", host: "localhost"
+2023/09/03 00:41:44 [emerg] 1#1: host not found in upstream "phpserver" in /etc/nginx/sites-enabled/default:9
+2023/09/03 00:42:25 [error] 23#23: *1 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.20.0.1, server: default.com.js, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/info.php"
+2023/09/03 00:42:26 [error] 23#23: *1 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.20.0.1, server: default.com.js, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/info.php"
+2023/09/03 00:42:27 [error] 23#23: *1 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.20.0.1, server: default.com.js, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/info.php"
+2023/09/03 00:42:51 [error] 22#22: *1 open() "/var/www/html/default.com.js/favicon.ico" failed (2: No such file or directory), client: 172.20.0.1, server: default.com.js, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/info.php"
+2023/09/03 02:18:40 [emerg] 40#40: host not found in upstream "phserver" in /etc/nginx/sites-enabled/documentos:55
+2023/09/03 02:19:09 [emerg] 41#41: open() "/public_html/ValidarDocumentos/access_log" failed (2: No such file or directory)
+2023/09/03 02:19:43 [emerg] 42#42: open() "/public_html/ValidarDocumentos/access_log" failed (2: No such file or directory)
+2023/09/03 02:20:12 [emerg] 43#43: open() "/var/www/htmlValidarDocumentos/access_log" failed (2: No such file or directory)
+2023/09/03 02:20:53 [notice] 45#45: signal process started
+2023/09/03 02:26:36 [notice] 58#58: signal process started
+2023/09/03 03:41:07 [error] 29#29: *1 open() "/var/www/html/default.com.js/favicon.ico" failed (2: No such file or directory), client: 192.168.2.1, server: default.com.js, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/info.php"
